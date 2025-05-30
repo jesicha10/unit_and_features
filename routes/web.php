@@ -26,4 +26,6 @@ Route::post('/loan', [LoanCalculatorController::class, 'calculate']);
 use App\Http\Controllers\AgeCalculatorController;
 
 Route::get('/age', [AgeCalculatorController::class, 'showForm']);
-Route::post('/age/calculate', [AgeCalculatorController::class, 'calculate'])->name('age.calculate');
+Route::post('/age', [AgeCalculatorController::class, 'calculate'])->name('age.calculate');
+
+
